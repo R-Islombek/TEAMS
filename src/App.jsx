@@ -1,14 +1,10 @@
- import './App.css'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import React from 'react'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-       <Header/>
-       <Hero/>
-    </>
+    <div>
+          App
+    </div>
   )
 }
 
