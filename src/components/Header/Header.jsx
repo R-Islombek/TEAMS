@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Logo from "./images/logo.png";
 import { IoSearch } from "react-icons/io5";
 import { FaCartArrowDown } from "react-icons/fa6";
-import { IoMenu, IoClose } from "react-icons/io5"; // Mobil menyu ikonkalari
+import { IoMenu, IoClose } from "react-icons/io5"; 
 import "./Header.css";
 
 const Header = () => {
