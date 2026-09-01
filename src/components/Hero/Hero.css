@@ -19,7 +19,7 @@
   margin-bottom: 15px;
   text-decoration: none;
   font-weight: 600;
-  color: #007bff; /* O'zingizning ranggingizga moslang */
+  color: #007bff; 
 }
 
 .hero__title {
@@ -33,9 +33,53 @@
   color: #666;
 }
 
+/* Forma va uning elementlari uchun stillar */
 .hero__form {
   display: flex;
   gap: 10px;
+}
+
+.hero__input {
+  flex-grow: 1;
+  padding: 14px 18px;
+  font-size: 15px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.hero__input::placeholder {
+  color: #999;
+}
+
+.hero__input:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+.hero__btn {
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.hero__btn:hover {
+  background-color: #0056b3;
+}
+
+.hero__btn:active {
+  transform: scale(0.98);
 }
 
 .hero__img img {
@@ -66,5 +110,11 @@
 
   .hero__form {
     flex-direction: column;
+  }
+
+  /* Mobil qurilmalarda input va tugma 100% kenglikda bo'lishi uchun */
+  .hero__input,
+  .hero__btn {
+    width: 100%;
   }
 }

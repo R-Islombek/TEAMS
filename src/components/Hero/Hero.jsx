@@ -19,8 +19,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero__container">
           <div className="hero__box">
-            
-            {/* Xatolik to'g'irlandi: <a> tegi qo'shildi */}
+    
             <a
               className='hero__link'
               href="#"
