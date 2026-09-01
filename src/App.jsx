@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Brand from './components/Brand/Brand';
 import How from './components/How/How';
 import Comfort from './components/Comfort/Comfort';
+import Card from './components/Card/Card';
 const App = () => {
   return (
       <>
@@ -13,6 +14,7 @@ const App = () => {
           <Brand/>
           <How/>
           <Comfort/>
+          <Card/>
       </>
   )
 }
