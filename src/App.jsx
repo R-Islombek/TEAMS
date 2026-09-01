@@ -11,6 +11,7 @@ import Customer from './components/Customer/Customer';
 import Props from "./components/Props/Props";
 import Sections from "./components/Sections/Section";
 import Posts from './components/Posts/Posts';
+import Footer from "./components/Footer/Footer"
 const App = () => {
   return (
       <>
@@ -25,6 +26,7 @@ const App = () => {
           <Props/>
           <Sections/>
           <Posts/>
+          <Footer/>
       </>
   )
 }
