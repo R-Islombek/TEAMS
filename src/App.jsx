@@ -10,6 +10,7 @@ import Favorite from './components/Favorite/Favorite';
 import Customer from './components/Customer/Customer';
 import Props from "./components/Props/Props";
 import Sections from "./components/Sections/Section";
+import Posts from './components/Posts/Posts';
 const App = () => {
   return (
       <>
@@ -23,6 +24,7 @@ const App = () => {
           <Customer/>
           <Props/>
           <Sections/>
+          <Posts/>
       </>
   )
 }

@@ -42,22 +42,18 @@ const Section = () => {
                                 Faucibus orci luctus et ultrices posuere cubilia curae.
                             </p>
                        </div>
-
-                       {/* Kartochkalar gridi (3 ta ustun) */}
                        <div className="section__grid">
                             {reviews.map((item) => (
                                  <div className='section__card' key={item.id}>
-                                       {/* 5 ta yulduzcha */}
+
                                        <div className='section__stars'>
                                              {[...Array(5)].map((_, i) => (
                                                   <FaStar key={i} />
                                              ))}
                                        </div>
 
-                                       {/* Sharh matni */}
                                        <p className='section__card-text'>{item.text}</p>
 
-                                       {/* Foydalanuvchi ma'lumoti */}
                                        <div className='section__profile'>
                                              <img src={item.img} alt={item.name} />
                                              <div className='section__profile-info'>
