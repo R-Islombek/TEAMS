@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Customer.css";
 
+
 const Customer = () => {
   const locations = [
     { id: 1, name: "San Francisco, CA" },

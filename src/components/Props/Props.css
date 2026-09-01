@@ -1,0 +1,131 @@
+
+.props-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.props__banner {
+  width: 100%;
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+
+.props__banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(74, 82, 72, 0.85); 
+  z-index: 1;
+}
+
+.props__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 650px;
+}
+
+.props__icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.props__icon-box img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.props__title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.props__text {
+  font-size: 15px;
+  color: #e2e8f0;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 580px;
+}
+
+.props__btn {
+  text-decoration: none;
+  background-color: #d97757;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.props__btn:hover {
+  background-color: #c46545;
+  transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 992px) {
+  .props__banner {
+    min-height: 380px;
+    padding: 50px 20px;
+  }
+
+  .props__title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .props-section {
+    padding: 30px 0;
+  }
+
+  .props__banner {
+    min-height: 340px;
+    border-radius: 16px;
+    padding: 40px 15px;
+  }
+
+  .props__title {
+    font-size: 26px;
+  }
+
+  .props__text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .props__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
