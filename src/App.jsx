@@ -7,6 +7,7 @@ import How from './components/How/How';
 import Comfort from './components/Comfort/Comfort';
 import Card from './components/Card/Card';
 import Favorite from './components/Favorite/Favorite';
+import Customer from './components/Customer/Customer';
 const App = () => {
   return (
       <>
@@ -17,6 +18,7 @@ const App = () => {
           <Comfort/>
           <Card/>
           <Favorite/>
+          <Customer/>
       </>
   )
 }
