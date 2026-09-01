@@ -8,7 +8,8 @@ import Comfort from './components/Comfort/Comfort';
 import Card from './components/Card/Card';
 import Favorite from './components/Favorite/Favorite';
 import Customer from './components/Customer/Customer';
-import Props from "./components/Props/Props"
+import Props from "./components/Props/Props";
+import Sections from "./components/Sections/Section";
 const App = () => {
   return (
       <>
@@ -21,6 +22,7 @@ const App = () => {
           <Favorite/>
           <Customer/>
           <Props/>
+          <Sections/>
       </>
   )
 }
