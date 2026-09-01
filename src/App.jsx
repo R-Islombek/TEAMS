@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Brand from './components/Brand/Brand';
 import How from './components/How/How';
+import Comfort from './components/Comfort/Comfort';
 const App = () => {
   return (
       <>
@@ -11,6 +12,7 @@ const App = () => {
           <Hero/>
           <Brand/>
           <How/>
+          <Comfort/>
       </>
   )
 }

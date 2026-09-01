@@ -1,0 +1,182 @@
+/* Asosiy Seksiya */
+.comfort {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.comfort__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Matn bloki */
+.comfort__box {
+  flex: 1;
+  max-width: 520px;
+}
+
+/* "Comfort first" beyji */
+.comfort__badge {
+  display: inline-block;
+  background-color: #f1f3f5;
+  color: #212529;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+/* Sarlavha */
+.comfort__title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+/* Tavsif matni */
+.comfort__text {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* Tugmalar konteyneri */
+.comfort__btns {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Asosiy tugma (Explore properties) */
+.comfort__btn-primary {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #e2e8f0;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.comfort__btn-primary:hover {
+  border-color: #111111;
+  transform: translateY(-2px);
+}
+
+/* Ikkinchihavola (Contact agent >) */
+.comfort__btn-secondary {
+  text-decoration: none;
+  color: #111111;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.comfort__btn-secondary span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.comfort__btn-secondary:hover {
+  color: #2563eb;
+}
+
+/* Rasm qismi */
+.comfort__img-box {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comfort__img-box img {
+  width: 100%;
+  max-width: 540px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==========================================
+   RESPONSIVE (Moslashuvchanlik)
+   ========================================== */
+
+/* 992px dan kichik ekranlar (Planshetlar) */
+@media (max-width: 992px) {
+  .comfort {
+    padding: 70px 0;
+  }
+
+  .comfort__container {
+    flex-direction: column-reverse; /* Rasmni tepaga yoki matnni tepaga qo'yish uchun */
+    text-align: center;
+    gap: 40px;
+  }
+
+  .comfort__box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comfort__title {
+    font-size: 36px;
+  }
+
+  .comfort__img-box {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .comfort__img-box img {
+    max-width: 100%;
+    height: 350px;
+  }
+}
+
+/* 576px dan kichik ekranlar (Mobil telefonlar) */
+@media (max-width: 576px) {
+  .comfort {
+    padding: 50px 0;
+  }
+
+  .comfort__title {
+    font-size: 28px;
+  }
+
+  .comfort__text {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .comfort__btns {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .comfort__btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .comfort__img-box img {
+    height: 260px;
+  }
+}
